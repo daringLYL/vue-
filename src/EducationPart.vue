@@ -29,7 +29,7 @@
           </dd>
           <dd style="margin-left:28px">{{outstandingSub}}</dd>
           <dd style="margin-left:28px">
-            {{toOutstangdingSub}}
+            {{outstandingSub2}}
             <span class="spaceFix"></span>
             <span class="spaceFix"></span>等
           </dd>
@@ -42,7 +42,7 @@
 
 <script>
 export default {
-  props:["toTime","endTime","subject","degree","credit","outstandingSub","toOutstangdingSub"]
+  props:["toTime","endTime","subject","degree","credit","outstandingSub","outstandingSub2"]
 };
 </script>
 

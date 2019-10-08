@@ -8,50 +8,31 @@
     </div>
     <div class="sec-content">
       <dl class="language-certificates">
-        <div class="language-cert-wrapper">
-          <dt class="language-cert-type">国语</dt>
-          <dd class="progress language-cert-score">
-            <div style="width:95%" class="progress-bar">
-              <span class="progress-label">精通</span>
-            </div>
-          </dd>
-        </div>
-        <div class="language-cert-wrapper">
-          <dt class="language-cert-type">英语</dt>
-          <dd class="progress language-cert-score">
-            <div style="width:85%" class="progress-bar">
-              <span class="progress-label">熟练</span>
-            </div>
-          </dd>
-        </div>
-        <div class="language-cert-wrapper">
-          <dt class="language-cert-type">沪语</dt>
-          <dd class="progress language-cert-score">
-            <div style="width:99%" class="progress-bar">
-              <span class="progress-label">地道</span>
-            </div>
-          </dd>
-        </div>
+        <languagePart :language="languageData.languageOne" :level="languageData.levelOne" :width="languageData.widthOne" />
+        <languagePart :language="languageData.languageTwo" :level="languageData.levelTwo" :width="languageData.widthTwo" />
+        <languagePart :language="languageData.languageThree" :level="languageData.levelThree" :width="languageData.widthThree" />
       </dl>
     </div>
     <ul class="language-description">
-      <li class="language-desc-item">
-        能够
-        <strong>流畅阅读</strong>大部分英文网页，理解
-        <strong>技术类</strong>官方文档
-      </li>
-      <li class="language-desc-item">能够用英语交流并讨论技术类问题</li>
-      <li class="language-desc-item">
-        能够
-        <strong>无字幕观看</strong>并
-        <strong>理解</strong>英文版网课或技术类发布会视频
-      </li>
+      <languagePartTwo :text1="languageData.text1_One" :text2="languageData.text2_One" :pointText1="languageData.pointText1_One" :pointText2="languageData.pointText2_One" />
+      <languagePartTwo :text1="languageData.text1_Two" />
+      <languagePartTwo :text1="languageData.text1_Three" :text2="languageData.text2_Three" :pointText1="languageData.pointText1_Three" :pointText2="languageData.pointText2_Three" />
     </ul>
   </section>
 </template>
 
 <script>
-export default {};
+import languagePart from "./LanguagePart.vue";
+import languagePartTwo from "./LanguagePartTwo.vue";
+import data from "./data.json"
+export default {
+  components: { languagePart, languagePartTwo },
+  data(){
+    return {
+      languageData:data
+      }
+  }
+};
 </script>
 
 <style>

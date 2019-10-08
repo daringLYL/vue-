@@ -8,16 +8,41 @@
         </h3>
       </div>
     </section>
-    <educationPart toTime="2015" endTime="2016" subject="数据科学" degree="硕士" credit="5.91" outstandingSub="移动网络工程，学术研究实践" 
-    toOutstangdingSub="普适移动系统开发，毕业设计项目1，2"/>
-    <educationPart toTime="2012" endTime="2014" subject="信息科技" degree="学士" credit="5.44" outstandingSub="电子商业网站开发，网页设计与开发"
-    toOutstangdingSub="数据库设计，游戏产业入门"/>
+    <educationPart
+      :toTime="educationData.toTime1"
+      :endTime="educationData.endTime1"
+      :subject="educationData.subject1"
+      :degree="educationData.degree1"
+      :credit="educationData.credit1"
+      :outstandingSub="educationData.outstandingSub1"
+      :outstandingSub2="educationData.outstandingSub2"
+    />
+    <educationPart
+      :toTime="educationData.toTime2"
+      :endTime="educationData.endTime2"
+      :subject="educationData.subject2"
+      :degree="educationData.degree2"
+      :credit="educationData.credit2"
+      :outstandingSub="educationData.outstandingSub3"
+      :outstandingSub2="educationData.outstandingSub4"
+    />
   </div>
 </template>
 
 <script>
-import educationPart from "./EducationPart.vue"
-export default {components:{ educationPart } };
+import educationPart from "./EducationPart.vue";
+import data from "./data.json";
+export default {
+  components: { educationPart },
+  mounted() {
+    console.log(this.educationData);
+  },
+  data() {
+    return {
+      educationData: data
+    };
+  }
+};
 </script>
 
 <style>

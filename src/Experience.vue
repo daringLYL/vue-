@@ -23,31 +23,17 @@
             </time>
           </h3>
           <dl class="experience-description timeline-content">
-            <dt class="experience-position">前端工程师</dt>
-            <dd class="experience-task">
-              <strong>分析项目需求，制定计划</strong>并按主流项目开发流程
-              <strong>（敏捷开发）</strong>实现前端
-              <strong>组件</strong>的
-              <strong>开发与维护</strong>，与后端工程师
-              <strong>配合</strong>实现项目
-              <strong>功能对接</strong>
-            </dd>
-            <dt class="experience-position">经手项目:</dt>
-            <dd class="experience-task">
-              <strong>手机扫码</strong>点餐应用（支持iOS
-              <span class="spaceFix"></span>/
-              <span class="spaceFix"></span>安卓）
-            </dd>
-            <dd class="experience-task">
-              澳大利亚
-              <strong>著名面包店BreadTop</strong>面包供应商的
-              <strong>订单管理系统</strong>
-            </dd>
-            <dd class="experience-task">
-              澳大利亚热销净水器品牌Shield
-              <span class="spaceFix"></span>Filter
-              <strong>电商官网</strong>
-            </dd>
+            <expriencePart :title="exprienceData.title1" />
+            <expriencePartTwo :pointType1="exprienceData.pointType1_One" :pointType2="exprienceData.pointType2_One" 
+            :pointType3="exprienceData.pointType3_One" :pointType4="exprienceData.pointType4_One" :pointType5="exprienceData.pointType5_One" 
+            :pointType6="exprienceData.pointType6_One" :type1="exprienceData.type1_One" :type2="exprienceData.type2_One" 
+            :type3="exprienceData.type3_One" :type4="exprienceData.type4_One" :type5="exprienceData.type5_One" />
+            <expriencePart :title="exprienceData.title2" />
+            <expriencePartTwo :pointType1="exprienceData.pointType1_Two" :type1="exprienceData.type1_Two" :otherType1="exprienceData.otherType1_Two" 
+            :otherType2="exprienceData.otherType2_Two" />
+            <expriencePartTwo :pointType2="exprienceData.pointType2_Three" :pointType3="exprienceData.pointType3_Three" :type1="exprienceData.type1_Three"
+            :type2="exprienceData.type2_Three" />
+            <expriencePartTwo :pointType7="exprienceData.pointType7_Four" :type1="exprienceData.type1_Four" :otherType1="exprienceData.otherType1_Four" />
           </dl>
         </li>
         <li class="timeline-item experience-internship">
@@ -64,17 +50,10 @@
             </time>
           </h3>
           <dl class="experience-description timeline-content">
-            <dt class="experience-position">网页设计与重构（实习）</dt>
-            <dd class="experience-task">
-              协助完成公司
-              <strong>官网文库</strong>及公司旗下
-              <strong>重要业务网站</strong>“平方建材网”的
-              <strong>改版设计</strong>
-            </dd>
-            <dd class="experience-task">
-              所设计的文库界面
-              <strong>获得leader认可</strong>并列入征选范围
-            </dd>
+            <expriencePart :title="exprienceData.title3" />
+            <expriencePartTwo :pointType2="exprienceData.pointType2_Five" :pointType3="exprienceData.pointType3_Five" :pointType4="exprienceData.pointType4_Five" 
+            :type1="exprienceData.type1_Five" :type2="exprienceData.type2_Five" :type3="exprienceData.type3_Five" />
+            <expriencePartTwo :pointType2="exprienceData.pointType2_Six" :type1="exprienceData.type1_Six" :type2="exprienceData.type2_Six" />
           </dl>
         </li>
         <li class="timeline-item experience-project">
@@ -93,31 +72,17 @@
               Project
               <span class="spaceFix"></span>Minder
             </dt>
-            <dd class="experience-task">
-              专为
-              <strong>昆士兰科技大学</strong>科技工程学院定制开发的
-              <strong>项目信息管理系统</strong>
-            </dd>
-            <dd class="experience-task">
-              <strong>独自</strong>完成
-              <strong>用户验证</strong>模块，项目信息
-              <strong>增删改</strong>模块，系统
-              <strong>界面</strong>，
-              <strong>表单</strong>，
-              <strong>注册/登录</strong>及其他相关页面的
-              <strong>设计与开发</strong>
-            </dd>
-            <dd class="experience-task">
-              <strong>独自</strong>完成后端
-              <strong>数据库</strong>与前端页面的
-              <strong>对接</strong>与
-              <strong>调试</strong>
-            </dd>
-            <dd class="experience-task">
-              <strong>独自</strong>完成
-              <strong>20分钟英语</strong>项目汇报演讲及
-              <strong>12000字英语</strong>项目报告
-            </dd>
+            <expriencePartTwo :pointType2="exprienceData.pointType2_Seven" :pointType3="exprienceData.pointType3_Seven" :type1="exprienceData.type1_Seven" />
+            <expriencePartTwo :pointType1="exprienceData.pointType1_Eight" :pointType2="exprienceData.pointType2_Eight" 
+            :pointType3="exprienceData.pointType3_Eight" :pointType4="exprienceData.pointType4_Eight" :pointType5="exprienceData.pointType5_Eight" 
+            :pointType6="exprienceData.pointType6_Eight" :pointType7="exprienceData.pointType7_Eight" :type1="exprienceData.type1_Eight"
+            :type2="exprienceData.type2_Eight" :type3="exprienceData.type3_Eight" :type4="exprienceData.type4_Eight" :type5="exprienceData.type5_Eight"
+            :type6="exprienceData.type6_Eight" />
+            <expriencePartTwo :pointType1="exprienceData.pointType1_Nine" :pointType2="exprienceData.pointType2_Nine" 
+            :pointType3="exprienceData.pointType3_Nine" :pointType4="exprienceData.pointType4_Nine" :type1="exprienceData.type1_Nine" 
+            :type2="exprienceData.type2_Nine" :type3="exprienceData.type3_Nine" />
+            <expriencePartTwo :pointType1="exprienceData.pointType1_Ten" :pointType2="exprienceData.pointType2_Ten" :pointType3="exprienceData.pointType3_Ten" 
+            :type1="exprienceData.type1_Ten" :type2="exprienceData.type2_Ten" :type3="exprienceData.type3_Ten" />
           </dl>
         </li>
         <li class="timeline-item experience-project">
@@ -136,32 +101,13 @@
               <span class="spaceFix"></span>Minder
               <span class="spaceFix"></span>Mobile
             </dt>
-            <dd class="experience-task">
-              Project
-              <span class="spaceFix"></span>Minder项目信息管理系统的
-              <strong>配套手机应用</strong>
-            </dd>
-            <dd class="experience-task">
-              <strong>独自</strong>完成系统
-              <strong>原有模块</strong>，新增
-              <strong>“用户会议管理”</strong>，
-              <strong>“学生地点定位”模块</strong>，
-              <strong>手机端</strong>界面的
-              <strong>移植</strong>，
-              <strong>设计</strong>，
-              <strong>调试</strong>和
-              <strong>二次开发</strong>
-            </dd>
-            <dd class="experience-task">
-              <strong>独自</strong>完成
-              <strong>20分钟英语</strong>项目汇报演讲及
-              <strong>10000字英语</strong>项目报告
-            </dd>
-            <dd class="experience-task">
-              项目汇报演讲获导师
-              <strong>满分好评</strong>并考虑作为
-              <strong>学校现有系统的新模块部署</strong>
-            </dd>
+            <expriencePartTwo pointType7="配套手机应用" type1="Project" otherType1="Minder项目信息管理系统的"/>
+            <expriencePartTwo pointType1="独自" pointType2="原有模块" pointType3="“用户会议管理”" pointType4="“学生地点定位”模块" 
+            pointType5="手机端" pointType6="移植" pointType7="设计" pointType8="调试" pointType9="二次开发" type1="完成系统"
+            type2="，新增" type3="，" type4="，" type5="界面的" type6="，" type7="，" type8="和" />
+            <expriencePartTwo pointType1="独自" pointType2="20分钟英语" pointType3="12000字英语" 
+            type1="完成" type2="项目汇报演讲及" type3="项目报告" />
+            <expriencePartTwo pointType2="满分好评" pointType3="学校现有系统的新模块部署" type1="项目汇报演讲获导师" type2="并考虑作为" />
           </dl>
         </li>
       </ul>
@@ -170,7 +116,16 @@
 </template>
 
 <script>
-export default {};
+import expriencePart from "./ExpriencePart.vue"
+import expriencePartTwo from "./ExpriencePartTwo.vue"
+import data from "./data.json"
+export default {
+   components: { expriencePart , expriencePartTwo },
+   data() {
+    return {
+      exprienceData: data
+    }
+}};
 </script>
 
 <style>
