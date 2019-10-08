@@ -1,0 +1,27 @@
+{
+    "toTime1":2015,"endTime1":2016,"subject1":"数据科学","degree1":"硕士",
+    "credit1":5.91,"outstandingSub1":"移动网络工程，学术研究实践","outstandingSub2":"普适移动系统开发，毕业设计项目1，2",
+    "toTime2":2012,"endTime2":2014,"subject2":"信息科技","degree2":"学士",
+    "credit2":5.44,"outstandingSub3":"电子商业网站开发，网页设计与开发" ,"outstandingSub4":"数据库设计，游戏产业入门",
+    "languageOne":"国语","languageTwo":"英语","languageThree":"沪语","levelOne":"精通","levelTwo":"熟练",
+    "levelThree":"地道","widthOne":"width:95%","widthTwo":"width:85%","widthThree":"width:99%",
+    "text1_One":"大部分英文网页，理解","text2_One":"官方文档","pointText1_One":"流畅阅读","pointText2_One":"技术类",
+    "text1_Two":"能够用英语交流并讨论技术类问题","text1_Three":"并","text2_Three":"英文版网课或技术类发布会视频",
+    "pointText1_Three":"无字幕观看","pointText2_Three":"理解","title1":"前端工程师","title2":"经手项目:",
+    "title3":"网页设计与重构（实习）","pointType1_One":"分析项目需求，制定计划","pointType2_One":"（敏捷开发）",
+    "pointType3_One":"组件","pointType4_One":"开发与维护","pointType5_One":"配合","pointType6_One":"功能对接",
+    "type1_One":"并按主流项目开发流程","type2_One":"实现前端","type3_One":"的","type4_One":"，与后端工程师",
+    "type5_One":"实现项目","pointType1_Two":"手机扫码","type1_Two":"点餐应用（支持iOS","otherType1_Two":"/",
+    "otherType2_Two":"安卓）","pointType2_Three":"著名面包店BreadTop","pointType3_Three":"订单管理系统",
+    "type1_Three":"澳大利亚","type2_Three":"面包供应商的","pointType7_Four":"电商官网","type1_Four":"澳大利亚热销净水器品牌Shield",
+    "otherType1_Four":"Filter","pointType2_Five":"官网文库","pointType3_Five":"重要业务网站","pointType4_Five":"改版设计",
+    "type1_Five":"协助完成公司","type2_Five":"及公司旗下","type3_Five":"“平方建材网”的","pointType2_Six":"获得leader认可",
+    "type1_Six":"所设计的文库界面","type2_Six":"并列入征选范围","pointType2_Seven":"昆士兰科技大学","pointType3_Seven":"项目信息管理系统",
+    "type1_Seven":"科技工程学院定制开发的","pointType1_Eight":"独自","pointType2_Eight":"用户验证","pointType3_Eight":"增删改",
+    "pointType4_Eight":"界面","pointType5_Eight":"表单","pointType6_Eight":"注册/登录","pointType7_Eight":"设计与开发",
+    "type1_Eight":"完成","type2_Eight":"模块，项目信息","type3_Eight":"模块，系统","type4_Eight":"，","type5_Eight":"，","type6_Eight":"及其他相关页面的",
+    "pointType1_Nine":"独自","pointType2_Nine":"数据库","pointType3_Nine":"对接","pointType4_Nine":"调试","type1_Nine":"完成后端","type2_Nine":"与前端页面的",
+    "type3_Nine":"与","pointType1_Ten":"独自","pointType2_Ten":"20分钟英语","pointType3_Ten":"12000字英语","type1_Ten":"完成","type2_Ten":"项目汇报演讲及",
+    "type3_Ten":"项目报告","pointType7_Eleven":"","type1_Eleven":"","otherType1_Eleven":""
+
+}
