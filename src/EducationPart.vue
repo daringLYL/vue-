@@ -10,7 +10,7 @@
           </time>
         </h3>
         <dl class="education-description timeline-content">
-          <dt class="education-name">昆士兰科技大学</dt>
+          <dt class="education-name">{{school}}</dt>
           <dd class="education-major">
            {{subject}}
             <span class="spaceFix"></span>{{degree}}
@@ -27,9 +27,9 @@
               <span class="spaceFix"></span>(6.0以上)
             </span>
           </dd>
-          <dd style="margin-left:28px">{{outstandingSub}}</dd>
+          <dd style="margin-left:28px">{{highScore}}</dd>
           <dd style="margin-left:28px">
-            {{outstandingSub2}}
+            {{toHighScore}}
             <span class="spaceFix"></span>
             <span class="spaceFix"></span>等
           </dd>
@@ -42,7 +42,7 @@
 
 <script>
 export default {
-  props:["toTime","endTime","subject","degree","credit","outstandingSub","outstandingSub2"]
+  props:["toTime","endTime","subject","degree","credit","school","highScore","toHighScore"]
 };
 </script>
 

@@ -33,3 +33,4 @@ export default{
   .row{column-count:2;padding: 30px 45px;}
   .back{background-color: #f6fff6;width: 1030px;box-shadow: 3px 3px 9px rgba(0,0,0,.2);margin-top: 10px;margin-right: auto;margin-left: auto;}
 </style>
+

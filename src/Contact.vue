@@ -1,14 +1,6 @@
 <template>
   <section class="language">
-    <div class="sec-title-wrapper">
-      <h3 class="sec-title">
-        <span class="sec-title-ch">与我联系</span>
-        <span class="sec-title-en">
-          Contact
-          <span class="spaceFix"></span>Me
-        </span>
-      </h3>
-    </div>
+    <plateTitle :title1="commonData.title[19]" :title2="commonData.title[20]" />
     <figure class="footer-qr">
       <img src="static/jackli_qr.png" alt="ooJacklioO" class="qr-img visible-print" />
     </figure>
@@ -16,8 +8,17 @@
 </template>
 
 <script>
-export default {};
+import plateTitle from "./PlateTitle"
+import data from "./data.json"
+export default {
+   components: { plateTitle },
+   data() {
+    return {
+      commonData: data.CommonData
+    }
+}};
 </script>
 
 <style>
 </style>
+

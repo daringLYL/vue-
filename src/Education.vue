@@ -1,45 +1,41 @@
 <template>
   <div>
     <section class="education">
-      <div class="sec-title-wrapper">
-        <h3 class="sec-title">
-          <span class="sec-title-ch">教育经历</span>
-          <span class="sec-title-en">Education</span>
-        </h3>
-      </div>
+      <plateTitle :title1="commonData.title[11]" :title2="commonData.title[12]" />
     </section>
     <educationPart
-      :toTime="educationData.toTime1"
-      :endTime="educationData.endTime1"
-      :subject="educationData.subject1"
-      :degree="educationData.degree1"
-      :credit="educationData.credit1"
-      :outstandingSub="educationData.outstandingSub1"
-      :outstandingSub2="educationData.outstandingSub2"
+      :toTime="educationData.toTime[0]"
+      :endTime="educationData.endTime[0]"
+      :subject="educationData.subject[0]"
+      :degree="educationData.degree[0]"
+      :credit="educationData.credit[0]"
+      :highScore="educationData.highScore[0]"
+      :toHighScore="educationData.highScore[1]"
+      :school="educationData.school"
     />
     <educationPart
-      :toTime="educationData.toTime2"
-      :endTime="educationData.endTime2"
-      :subject="educationData.subject2"
-      :degree="educationData.degree2"
-      :credit="educationData.credit2"
-      :outstandingSub="educationData.outstandingSub3"
-      :outstandingSub2="educationData.outstandingSub4"
+      :toTime="educationData.toTime[1]"
+      :endTime="educationData.endTime[1]"
+      :subject="educationData.subject[1]"
+      :degree="educationData.degree[1]"
+      :credit="educationData.credit[1]"
+      :highScore="educationData.highScore[2]"
+      :toHighScore="educationData.highScore[3]"
+      :school="educationData.school"
     />
   </div>
 </template>
 
 <script>
 import educationPart from "./EducationPart.vue";
+import plateTitle from "./PlateTitle";
 import data from "./data.json";
 export default {
-  components: { educationPart },
-  mounted() {
-    console.log(this.educationData);
-  },
+  components: { educationPart, plateTitle },
   data() {
     return {
-      educationData: data
+      educationData: data.EducationData,
+      commonData: data.CommonData
     };
   }
 };
@@ -47,3 +43,4 @@ export default {
 
 <style>
 </style>
+
