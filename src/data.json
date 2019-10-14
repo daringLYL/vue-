@@ -1,7 +1,5 @@
 {
     "EducationData": {
-        "toTime": [2015, 2012],
-        "endTime": [2016, 2014],
         "subject": ["数据科学", "信息科技"],
         "degree": ["硕士", "学士"],
         "credit": [5.91, 5.44],
@@ -16,26 +14,33 @@
     "LanguageData": {
         "language": ["国语", "英语", "沪语"],
         "level": ["精通", "熟练", "地道"],
-        "width": ["width:95%", "width:85%", "width:99%"],
-        "text": ["能够", "大部分英文网页，理解", "官方文档", "用英语交流并讨论技术类问题", "并", "英文版网课或技术类发布会视频"],
-        "pointText": ["流畅阅读", "技术类", "无字幕观看", "理解"]
+        "width": ["width:95%", "width:85%", "width:99%"]
     },
     "CommonData": {
-        "title": [
-            "前端工程师", "经手项目:", "网页设计与重构（实习）", "Project", "Minder", "Mobile", "HTML/ CSS",
-            "JavaScript", "DOM/ BOM及常见  Web API", "前端工程实践", "后端云数据库（FireBase）", "教育经历",
-            "Education", "语言水平", "Language", "项目与工作经验", "Experience", "技能", "Skills", "与我联系", "Contact Me"
-        ],
-        "experience": ["Tekkers", "极客团队", "布里斯班", "广联达兴安得力", "上海", "个人项目", "Web", "前端", "后端", "其他"],
-        "experienceToTime": [2015.07, 2013.11],
-        "experienceEndTime": ["至今", 2014.02],
+        "toTime": [2015, 2012, 2015.07, 2013.11],
+        "endTime": [2016, 2014, "至今", 2014.02],
+        "title": {
+            "plateTitle":[
+                "教育经历", "Education", "语言水平", "Language", "项目与工作经验", "Experience", "技能", "Skills", "与我联系", "Contact Me"
+            ],
+            "headTitle":[
+                "Tekkers", "极客团队", "布里斯班", "广联达兴安得力", "上海", "个人项目", "Web", "前端", "后端", "其他"
+            ],
+            "subtitle":[
+                "前端工程师", "经手项目:", "网页设计与重构（实习）", "Project", "Minder", "Mobile", "HTML/ CSS",
+            "JavaScript", "DOM/ BOM及常见  Web API", "前端工程实践", "后端云数据库（FireBase）"
+            ]
+        },
         "shortLine":["-", "~"],
-        "experienceProjectLink":["https://github.com/n8659150/ProjectMinderWebApp", "https://projectminder.firebaseapp.com", "https://github.com/n8659150/ProjectMinderMobile"],
-        "experienceProject":["源代码", "Demo"],
-        "showLink":[false, true],
-        "typeClass":["experience-task", "skills-item-description"],
-        "type":{
-            "typeList": [
+        "projectLink":["https://github.com/n8659150/ProjectMinderWebApp", "https://projectminder.firebaseapp.com", "https://github.com/n8659150/ProjectMinderMobile"],
+        "project":["源代码", "Demo"],
+        "onShow":[false, true],
+        "textClass":["experience-task", "skills-item-description"],
+        "text":{
+            "textList": [
+                "能够流畅阅读大部分英文网页，理解技术类官方文档",
+                "能够用英语交流并讨论技术类问题",
+                "能够无字幕观看并理解英文版网课或技术类发布会视频",
                 "分析项目需求，制定计划并按主流项目开发流程（敏捷开发）实现前端组件的开发与维护，与后端工程师配合实现项目功能对接",
                 "手机扫码点餐应用（支持iOS/安卓）",
                 "澳大利亚著名面包店BreadTop面包供应商的订单管理系统",
@@ -50,7 +55,7 @@
                 "能够使用Firebase官方API实现前端页面与后端数据库的基本交互，并可根据所需要的数据形式确定合适的数据类型并提出数据存取方案建议",
                 "对于相类似的后端云服务可以迅速上手"
             ],
-            "forTypeList":[
+            "circulationText":[
                 [
                     "专为昆士兰科技大学科技工程学院定制开发的项目信息管理系统",
                     "独自完成用户验证模块，项目信息增删改模块，系统界面，表单，注册/登录及其他相关页面的设计与开发",

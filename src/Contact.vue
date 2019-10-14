@@ -1,6 +1,6 @@
 <template>
   <section class="language">
-    <plateTitle :title1="commonData.title[19]" :title2="commonData.title[20]" />
+    <PlateTitle :title1="commonData.title.plateTitle[8]" :title2="commonData.title.plateTitle[9]" />
     <figure class="footer-qr">
       <img src="static/jackli_qr.png" alt="ooJacklioO" class="qr-img visible-print" />
     </figure>
@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import plateTitle from "./PlateTitle"
+import PlateTitle from "./PlateTitle"
 import data from "./data.json"
 export default {
-   components: { plateTitle },
+   components: { PlateTitle },
    data() {
     return {
       commonData: data.CommonData
@@ -21,4 +21,3 @@ export default {
 
 <style>
 </style>
-

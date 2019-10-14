@@ -1,11 +1,11 @@
 <template>
   <div>
     <section class="education">
-      <plateTitle :title1="commonData.title[11]" :title2="commonData.title[12]" />
+      <PlateTitle :title1="commonData.title.plateTitle[0]" :title2="commonData.title.plateTitle[1]" />
     </section>
-    <educationPart
-      :toTime="educationData.toTime[0]"
-      :endTime="educationData.endTime[0]"
+    <EducationPart
+      :toTime="commonData.toTime[0]"
+      :endTime="commonData.endTime[0]"
       :subject="educationData.subject[0]"
       :degree="educationData.degree[0]"
       :credit="educationData.credit[0]"
@@ -13,9 +13,9 @@
       :toHighScore="educationData.highScore[1]"
       :school="educationData.school"
     />
-    <educationPart
-      :toTime="educationData.toTime[1]"
-      :endTime="educationData.endTime[1]"
+    <EducationPart
+      :toTime="commonData.toTime[1]"
+      :endTime="commonData.endTime[1]"
       :subject="educationData.subject[1]"
       :degree="educationData.degree[1]"
       :credit="educationData.credit[1]"
@@ -27,11 +27,11 @@
 </template>
 
 <script>
-import educationPart from "./EducationPart.vue";
-import plateTitle from "./PlateTitle";
+import EducationPart from "./EducationPart.vue";
+import PlateTitle from "./PlateTitle";
 import data from "./data.json";
 export default {
-  components: { educationPart, plateTitle },
+  components: { EducationPart, PlateTitle },
   data() {
     return {
       educationData: data.EducationData,
@@ -43,4 +43,3 @@ export default {
 
 <style>
 </style>
-

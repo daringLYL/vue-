@@ -1,12 +1,12 @@
 <template>
-  <dd :class="typeClass">
-  {{type}}
-  </dd>
+<dd :class="textClass">
+  {{text}}
+</dd>
 </template>
 
 <script>
 export default {
-  props: ["type", "typeClass"]
+  props: ["text", "textClass"]
 };
 </script>
 
