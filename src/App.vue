@@ -1,29 +1,29 @@
 <template>
 <div class="back">
   <template class="header">
-  <test_1 />
+  <headerInfo />
   </template>
   <div class="row">
-  <test_2 />
-  <test_3 />
-  <test_4 />
-  <test_5 />
-  <test_6 />
+  <education />
+  <language />
+  <experience />
+  <skills />
+  <contact />
   </div>
-  <test_7 />
+  <footerInfo />
 </div>
 </template>
 
 <script>
-import test_1 from "./Test_1.vue"
-import test_2 from "./Test_education.vue"
-import test_3 from "./Test_language.vue"
-import test_4 from "./Test_experience.vue"
-import test_5 from "./Test_skills.vue"
-import test_6 from "./Test_6.vue"
-import test_7 from "./Test_7.vue"
+import headerInfo from "./HeaderInfo.vue"
+import education from "./Education.vue"
+import language from "./Language.vue"
+import experience from "./Experience.vue"
+import skills from "./Skills.vue"
+import contact from "./Contact.vue"
+import footerInfo from "./FooterInfo.vue"
 export default{
-  components:{ test_1 , test_2 , test_3 , test_4 , test_5 , test_6 , test_7 },
+  components:{ headerInfo , education , language , experience , skills , contact , footerInfo },
   }
 </script>
 
@@ -33,3 +33,4 @@ export default{
   .row{column-count:2;padding: 30px 45px;}
   .back{background-color: #f6fff6;width: 1030px;box-shadow: 3px 3px 9px rgba(0,0,0,.2);margin-top: 10px;margin-right: auto;margin-left: auto;}
 </style>
+
